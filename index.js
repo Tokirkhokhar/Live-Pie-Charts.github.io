@@ -141,12 +141,13 @@ function pluse1() {
 }
 
 function min1() {
+     num1 = num1 - 1;
     if (num1 < 0) {
         num1 = 0;
     }
 
 
-    num1 = num1 - 1;
+   
 
     ex1.style = 'stroke-dashoffset:calc(440px - (440px * ' + num1 + ')/100)';
     ex1.style.stroke = color[num1];
@@ -165,10 +166,11 @@ function pluse2() {
 }
 
 function min2() {
+       num2 = num2 - 1;
     if (num2 < 0) {
         num2 = 0;
     }
-    num2 = num2 - 1;
+ 
 
     ex2.style = 'stroke-dashoffset:calc(440px - (440px * ' + num2 + ')/100)';
     ex2.style.stroke = color[num2];
