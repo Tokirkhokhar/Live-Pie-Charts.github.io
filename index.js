@@ -155,10 +155,11 @@ function min1() {
 }
 
 function pluse2() {
+     num2 = num2 + 1;
     if (num2 > 100) {
         num2 = 100;
     }
-    num2 = num2 + 1;
+   
 
     ex2.style = 'stroke-dashoffset:calc(440px - (440px * ' + num2 + ')/100)';
     ex2.style.stroke = color[num2];
