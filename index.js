@@ -188,10 +188,11 @@ function pluse3() {
 }
 
 function min3() {
+    
+    num3 = num3 - 1;
     if (num3 < 0) {
         num3 = 0;
     }
-    num3 = num3 - 1;
 
     ex3.style = 'stroke-dashoffset:calc(440px - (440px * ' + num3 + ')/100)';
     ex3.style.stroke = color[num3];
